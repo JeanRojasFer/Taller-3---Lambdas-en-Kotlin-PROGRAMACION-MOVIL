@@ -83,7 +83,7 @@ fun crearactividad(actividades: MutableMap<Int, actividad>, ): MutableMap<Int, a
     var longitud: Int = actividades.size
     var fecha: LocalDate? = LocalDate.now()
 
-    var actividad_obj = actividad(null, null, fecha=fecha, true )
+    var actividad_obj = actividad(null, null, fecha=fecha, false )
 
     println("Ingrese el titulo de la actividad")
     var nuevotitulo = readLine()!!.toString()
